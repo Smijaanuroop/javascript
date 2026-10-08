@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ <style>
+         .num{
+            width: 200px;
+            height: 600px;
+            background-color: rgb(241, 245, 243);
+            padding: 100px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="num">
+
+        <h1 class="">Largest of Three Numbers:</h1>
+        <form action="">
+                    <label for="">Enter the First Number:</label>
+                    <input type="text" id="Num1">
+                    <br>
+                    <br>
+                    <label for="">Enter the Second Number:</label>
+                    <input type="text" id="Num2">
+                    <br>
+                    <br>
+                    <label for="">Enter the Third Number:</label>
+                    <input type="text" id="Num3">
+                    <br>
+                    <br>
+                    <button onclick="check()">Check</button>
+                    
+        </form>
+        <p id = "result"></p>
+   
+ </div>
+    <script>
+
+        function check()
+        {
+
+            let a , b , c , q ;
+            a = Number(document.getElementById('Num1').value);
+            b = Number(document.getElementById('Num2').value);
+            c = Number(document.getElementById('Num3').value);
+           if (a>b && a>c) {
+                    document.write(a);
+                    document.write( 'is Greater Number');
+           }
+           else if(b>a && b>c){
+            
+                    document.write(b);
+                    document.write(' is Greater Number');
+           }
+          
+          else
+          {
+                    document.write(c);
+                    document.write('c is Greater Number');
+           }
+        }
+
+    </script>
+
+</body>
+</html>

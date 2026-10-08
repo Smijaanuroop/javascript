@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+        .num{
+            width: 200px;
+            height: 600px;
+            background-color: rgb(234, 241, 237);
+            padding: 100px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="num">
+
+        <h1 class="">Eligibility:</h1>
+        <form action="">
+                    <label for="">Enter Age:</label>
+                    <input type="text" id="age">
+                    <br>
+                    <br>
+                    
+                    <button onclick="check()">Check</button>
+                    
+        </form>
+        <p id = "result"></p>
+   
+ </div>
+ <script>
+
+        function check()
+        {
+
+            let q = (document.getElementById('age').value);
+           if (q>=18) {
+                    document.write('Eligible for Vote');
+                    
+           }     
+
+        }
+ </script>
+
+</body>
+</html>

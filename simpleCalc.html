@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <style>
+
+        .cal{
+            width: 400px;
+            height: 600px;
+            background-color: rgb(229, 233, 233);
+            padding: 100px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="cal">
+
+        <h1 class="">SIMPLE CALCULATOR</h1>
+        <form action="">
+                    <label for="">Enter first Number:</label>
+                    <input type="text" id="one">
+                    <br>
+                    <br>
+                    <label for="">Enter Second Number:</label>
+                     <input type="text" id="two">
+                    <br>
+                    <br>
+                    <button onclick="add()">ADD</button>
+                    <button onclick="sub()">SUB</button>
+                    <button onclick="mul()">MUL</button>
+                     <button onclick="div()">DIV</button>
+
+
+        </form>
+        <p id = "result"></p>
+   
+ </div>
+    <script>
+
+        function add()
+        {
+
+            let a , b , c ;
+            a= Number(document.getElementById('one').value);
+            b= Number(document.getElementById("two").value);
+            c=a+b;
+            document.write(c);
+
+        }
+
+
+           function sub()
+        {
+
+            let a , b , c ;
+            a= Number(document.getElementById('one').value);
+            b= Number(document.getElementById("two").value);
+            c=a-b;
+            document.write(c);
+
+        }
+
+
+         function mul()
+        {
+
+            let a , b , c ;
+            a= Number(document.getElementById('one').value);
+            b= Number(document.getElementById("two").value);
+            c=a*b;
+            document.write(c);
+
+        }
+
+
+          function div()
+        {
+
+            let a , b , c ;
+            a= Number(document.getElementById('one').value);
+            b= Number(document.getElementById("two").value);
+            c=a/b;
+            document.write(c);
+
+        }
+
+    </script>
+    
+</body>
+</html>
