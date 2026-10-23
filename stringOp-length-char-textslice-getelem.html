@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo"></p>
+        <p id="demo1"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+    <script>
+
+        // length 
+
+      let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      let length = text.length;
+      
+        document.getElementById("demo").innerHTML=length;
+
+
+          // character() operator
+          
+       let text1 = "Hello World!";
+      let char = text1.charAt(1);
+      
+        document.getElementById("demo1").innerHTML=char;
+
+
+
+//  slice() operator in string
+
+          
+       let text2 = "Hello World!";
+      let part = text2.slice(7,13);
+      
+        document.getElementById("demo2").innerHTML=part;
+
+
+        
+//  subString() operator in string
+
+          
+       let str = "Hello World!";
+      let part1 = str.substring(7,13);
+      
+        document.getElementById("demo3").innerHTML=part1;
+
+
+    </script>
+</body>
+</html>

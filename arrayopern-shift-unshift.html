@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <p id="demo"></p>
+     <p id="demo1"></p>
+ <p id="demo2"></p>
+    <script>
+
+        // Shift operator
+
+       const fruit = ["Banana" , "Orange" , "Apple" , "Mango"]
+      fruit.shift();
+       
+        document.getElementById("demo").innerHTML=fruit;
+
+
+          // unShift operator
+          
+       const fruit1 = ["Banana" , "Orange" , "Apple" , "Mango"]
+      fruit1.unshift("Lemon" , "Pine");
+       
+        document.getElementById("demo1").innerHTML=fruit1;
+
+
+// update with new element
+
+ const fruit2 = ["Banana" , "Orange" , "Apple" , "Mango"]
+      fruit2[2] = "Strawberry";
+       
+        document.getElementById("demo2").innerHTML=fruit2;
+
+
+    </script>
+</body>
+</html>

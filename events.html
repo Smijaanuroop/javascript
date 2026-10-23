@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <style>
+  .num{
+            width: 600px;
+            height: 600px;
+            background-color: rgb(239, 238, 240);
+            padding: 100px;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body onload="window.alert('Page successfully loaded')">
+    <div class="num">
+
+        <h1 class="">Form:</h1>
+        <form method="post" onsubmit="return validate()">
+                    <label for="">Focus:<input type="text" id="input1" onfocus="FocusEvent()"/></label>
+                    
+                   
+                    
+                    <br>
+                    <br>
+                    <label for="">Keydown:<input type="text" id="input2" onkeydown="keydownEvent()"/></label>
+                    
+                    <br>
+                    <br>
+                    
+
+                    <label for="">KeyUp:</label>
+                    <input type="text" id="fname" onkeyup="keyup()">
+                   
+                    <br>
+                    <br>
+                    
+
+                    
+                    <label for="">Enter your name:</label>
+                    <input type="text" id="myInput"  onfocus="focusFunction()" onblur="blurFunction()">
+                   
+                    <br>
+                    <br>
+                    
+                    <h1 id="mouse" onmouseover="mouseOver()" onmouseout="mouseOut()">Mouse</h1>
+                    <br>
+                    <br>
+                    
+                    <button onclick="Submit()">Submit</button>
+                    
+        </form>
+          
+    </div>
+
+ <script>
+    function validate() {
+        let name=document.getElementById("name_id").value.trim();
+        let mobile=document.getElementById("mob_id").value.trim();
+        let address=document.getElementById("add_id").value.trim();
+        let emailid=document.getElementById("email_id").value.trim();
+        let pwd=document.getElementById("pwd_id").value.trim();
+        let valid=true;
+
+        if (name==="") {
+            document.getElementById("sp1").innerHTML="Enter Name*";
+            valid = false
+            
+        }
+          if (mobile==="") {
+            document.getElementById("sp2").innerHTML="Enter 10 digit Mobile Number*";
+            valid = false
+            
+        }
+
+          if (address==="") {
+            document.getElementById("sp3").innerHTML="Enter Address*";
+            valid = false
+            
+        }
+        
+          if (emailid==="") {
+            document.getElementById("sp4").innerHTML="Enter Email Address*";
+            valid = false
+            
+        }
+          if (pwd==="") {
+            document.getElementById("sp5").innerHTML="Enter Password*";
+            valid = false
+            
+        }
+        return valid;
+    }
+
+    function clearmsg(id) {
+        document.getElementById(id).innerHTML="";
+        
+    }
+       
+
+    function FocusEvent() {
+         document.getElementById("input1").style.background="aqua";
+        
+    }
+     function keydownEvent() {
+        alert("Pressed a key");
+    }
+
+
+    function keyup() {
+        var x = document.getElementById("fname");
+        x.value = x.value.toUpperCase();
+        
+    }
+
+    function focusFunction() {
+        document.getElementById("myInput").style.background = "yellow"
+    }
+
+
+     function blurFunction() {
+        document.getElementById("myInput").style.background = "red"
+    }
+
+     function mouseOver() {
+        document.getElementById("mouse").style.color = "red"
+    }
+
+     function mouseOut() {
+        document.getElementById("mouse").style.color = "blue"
+    }
+
+
+ </script>
+
+</body>
+</html>

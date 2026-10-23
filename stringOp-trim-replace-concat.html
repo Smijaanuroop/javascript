@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <h1 id="one">Good Morning!</h1>
+     <h1 id="one1">Good Morning!</h1>
+     <h1 id="one2">Good Morning!</h1>
+    <script>
+
+        
+
+          document.write("Good Morning");
+          window.alert("Alert Message");
+          console.log("Good Morning");
+
+         let text1 = " Good Morning! " ;
+         let text2 = text1.trim();
+         document.getElementById("one").innerHTML=text2;
+         
+         
+         let text = "Please visit Microsoft";
+         let newText = text.replace("Microsoft" , "Google");
+            document.getElementById("one1").innerHTML=newText;
+         
+
+        let textA = "Hello";
+        let textB = "World";
+        let textC = textA.concat(" " , textB);
+        document.getElementById("one2").innerHTML=textC;
+          
+    </script>
+</body>
+</html>
