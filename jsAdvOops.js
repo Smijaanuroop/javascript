@@ -73,31 +73,60 @@
 
 
 
-class Person  {
-    constructor(name) {
-        this.name= name;
-            }
-            learn(){
-                console.log(this.name+"learning")
-            }
+// class Person  {
+//     constructor(name) {
+//         this.name= name;
+//             }
+//             learn(){
+//                 console.log(this.name+"learning")
+//             }
+// }
+
+
+
+// class Child extends Person {
+// constructor(name, age){
+
+//     super(name);
+//     this.age= age;
+//     }
+//     display(){
+
+//         console.log(this.name + this.age)
+//     }
+
+// }
+// const p2 = new Child("A" , 12)
+// p2.learn();
+// p2.display();
+
+
+
+
+
+
+                            // Polymorphism
+
+
+class Animal {
+    makeSound() { console.log("Animal makes a sound")
+        
+    }
 }
 
-
-
-class Child extends Person {
-constructor(name, age){
-
-    super(name);
-    this.age= age;
+class Dog extends Animal {
+makeSound() { console.log("Dog barks")
+        
     }
-    display(){
-
-        console.log(this.name + this.age)
-    }
-
 }
-const p2 = new Child("A" , 12)
-p2.learn();
-p2.display();
 
+class Cat extends Animal {
+makeSound() { console.log("Cat meows")
+        
+    }
+}
 
+const animals=[new Dog(), new Cat(), new Animal()];
+for(const animal of animals){
+    animal.makeSound()
+}
