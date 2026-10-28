@@ -45,16 +45,19 @@ console.log(role)
 
 
 //  arrow function
-// const add= (a,b) =>a+b;
-// const result = add(2,4);
-// console.log(result)
 
-// function add(a,b) {
-//     return a+b;
+const add1= (a,b) =>a+b;
+const result1 = add1(2,4);
+console.log(result1)
+
+////////////////////
+
+function add2(a,b) {
+    return a+b;
     
-// }
-// let result = add(3,6);
-// console.log(result);
+}
+let result2 = add2(3,6);
+console.log(result2);
 
 
 
@@ -68,12 +71,27 @@ console.log(role)
 //  else {console.log("odd");}
 
 
-  const isEven = (a)=>{return a%2===0}
-  console.log(isEven(6))
+  const isEve = (a)=>{return a%2===0}
+  console.log(isEve(6))
 
 
 
-// const isEven = (number )=> {return number%2===0}
-// console.log(isEven(16))
+const isEven = (number )=> {return number%2===0}
+ console.log(isEven(16))
 
 
+
+// Using map() method
+
+const numberSs =[10,20,30,40,50];
+const doubLe = numberSs.map(num=>{return num*2})
+console.log(doubLe)
+
+
+// Using function  datatypes
+
+function calculate(a,b,callback) { const result3= a+b
+  callback(result3);}
+function display(result3) {
+    console.log(`${result3}`);}  
+calculate(10,20,display)    
